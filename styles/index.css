@@ -1,0 +1,41 @@
+@import url("./common/common.css");
+
+main {
+  width: min-content;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+main h1 {
+  margin: 0;
+}
+main b {
+  font-weight: 550;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 450;
+  gap: 0.2rem;
+  min-width: 300px;
+  width: max-content;
+}
+.contact a {
+  color: var(--color-text);
+  text-decoration-color: transparent;
+  transition: text-decoration 150ms ease-out;
+}
+.contact a:hover {
+  text-decoration-color: initial;
+}
+.contact .owner b {
+  font-size: 1.4rem;
+}
+.contact .address {
+  line-height: 1.1;
+}
+.contact .license {
+  font-size: 0.8rem;
+}
