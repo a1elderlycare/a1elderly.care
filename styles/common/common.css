@@ -3,19 +3,33 @@
 @import url("./sanitize.css");
 
 :root {
-  --color-denim: #224387;
-  --color-cinnabar: #e44d2e;
+  /* Colors */
+  /* https://paletton.com/#uid=43x0x0kpeyUfeLVkBE6vLvtwknE */
+  --color-denim: #2d75ac;
+    --color-denim-light: #76abd4;
+    --color-denim-dark: #084879;
+  --color-tomato: #ff6336;
+    --color-tomato-light: #ffa186;
+    --color-tomato-dark: #bc2a00;
+  --color-amber: #ffd036;
+    --color-amber-light: #ffe386;
+    --color-amber-dark: #bc9000;
   --color-offwhite: #f8f9fa;
   --color-offblack: #212529;
   --color-seashell: #fefaef;
+  /* Fonts */
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
   --font-serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol; 
   --font-mono: font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace; 
 
   --color-bg: var(--color-seashell);
   --color-brand: var(--color-denim);
-  --color-brand-secondary: var(--color-cinnabar);
+  --color-brand-secondary: var(--color-tomato);
+  --color-brand-tertiary: var(--color-amber);
   --color-text: var(--color-offblack);
+  --color-text-link: var(--color-denim);
+  --color-text-link-hover: var(--color-denim-light);
+  --color-text-link-visited: var(--color-denim-dark);
 
   font-size: 1.2rem;
 }
@@ -30,6 +44,20 @@ body {
 body hr {
   width: 100%;
 }
+body a {
+  color: var(--color-text-link);
+  text-decoration-color: transparent;
+  transition-property: text-decoration-color, color;
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+}
+body a:hover {
+  text-decoration-color: initial;
+}
+body a:visited {
+  color: var(--color-text-link-visited);
+  text-decoration-color: var(--color-text-link-visited);
+}
 
 #page {
   align-items: center;
@@ -40,24 +68,14 @@ body hr {
   min-height: 100vh;
   margin: auto;
 }
-
 #page > :where(header, main, footer) {
   padding: 0.75rem 0;
   /* width: 100%; */
 }
-
 #page > main {
   flex: 1;
 }
-
 #page > footer {
   flex: 0;
   font-size: 0.8rem;
-}
-#page > footer a {
-  text-decoration-color: transparent;
-  transition: text-decoration 150ms ease-out;
-}
-#page > footer a:hover {
-  text-decoration-color: initial;
 }
