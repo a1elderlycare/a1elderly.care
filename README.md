@@ -9,7 +9,10 @@
 
 ## TODO
 - [ ] add description
-- [ ] create svg logo
+- [x] create svg logo
+- [x] logo -> favicon
+- [ ] show logo in header
+- [x] add manifest
 - [ ] add photos
 
 (non-dev)
