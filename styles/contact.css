@@ -1,0 +1,44 @@
+@import url("./common/common.css");
+
+main {
+  width: min-content;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+main h1 {
+  border-bottom: 4px solid var(--color-brand);
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+main h1 .accent-dot {
+  color: var(--color-brand-secondary);
+  font-weight: 900;
+}
+main hr {
+  border: none;
+  border-bottom: 4px solid var(--color-brand);
+}
+main b {
+  font-weight: 600;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 450;
+  gap: 0.2rem;
+  min-width: 300px;
+  width: max-content;
+}
+.contact a,
+.contact a:visited {
+  color: var(--color-text);
+}
+.contact .address {
+  line-height: 1.1;
+}
+.contact .license {
+  font-size: 0.8rem;
+}

@@ -11,11 +11,10 @@
 - [ ] add description
 - [x] create svg logo
 - [x] logo -> favicon
-- [ ] show logo in header
 - [x] add manifest
 - [ ] add photos
 
 (non-dev)
 - [ ] setup GitHub acc for Robi
-- [ ] setup contact@a1elderly.care
+- [x] setup contact@a1elderly.care
 - [ ] forward emails to Robi
