@@ -98,6 +98,7 @@ main .contact :where(input, textarea) {
 main .contact label {
   background: transparent;
   padding: 0 0.25rem;
+  pointer-events: none;
   position: absolute;
     top: 0.25rem;
     left: 0.25rem;
