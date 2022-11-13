@@ -48,8 +48,9 @@ main b {
 
 main .hero {
   background-color: black;
-  background-image: url("https://friendlybusinessdemo.files.wordpress.com/2019/08/field-918534_1920.jpg");
-  background-position: 50%;
+  /* background-image: url("https://friendlybusinessdemo.files.wordpress.com/2019/08/field-918534_1920.jpg"); */
+  background-image: url("../assets/grid_0.png");
+  background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -121,4 +122,3 @@ main .contact button[type="submit"] {
 main .contact textarea {
   min-height: 2rem;
 }
-
