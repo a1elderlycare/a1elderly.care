@@ -15,6 +15,7 @@
   <link rel="apple-touch-icon-precomposed" href="assets/logo512.png">
   <link rel="stylesheet" href="styles/index.css">
   <!-- <script type="module" src="/app.js" defer></script> -->
+  <script src="app.js" defer></script>
 </head>
 
 <body>
@@ -49,7 +50,7 @@
       </section>
       <section class="contact">
         <h2><a href="#contact" id="contact">Send us a message</a></h2>
-        <form action=”mailto:contact@a1elderly.care method="POST">
+        <form>
           <div>
             <input placeholder=" " type="text" name="name" id="name" />
             <label for="name">Name</label>
@@ -62,7 +63,7 @@
             <textarea placeholder=" " name="message" id="message" cols="30" rows="10"></textarea>
             <label for="message">Message</label>
           </div>
-          <button type="submit">Send</button>
+          <button id="send-email" type="submit">Send</button>
         </form>
       </section>
     </main>

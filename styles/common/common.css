@@ -60,6 +60,9 @@ body a {
   color: var(--color-text-link-visited);
   text-decoration-color: var(--color-text-link-visited);
 }
+body button {
+  cursor: pointer;
+}
 
 #page {
   align-items: center;
