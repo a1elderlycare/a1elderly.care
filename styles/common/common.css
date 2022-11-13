@@ -16,6 +16,7 @@
     --color-amber-dark: #bc9000;
   --color-offwhite: #f8f9fa;
   --color-offblack: #212529;
+  --color-grey: #868e96;
   --color-seashell: #fefaef;
   /* Fonts */
   --font-sans: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif; 
@@ -39,7 +40,7 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-sans);
-  padding: 2rem;
+  padding-top: 1rem;
 }
 
 body hr {
@@ -52,10 +53,10 @@ body a {
   transition-duration: 150ms;
   transition-timing-function: ease-out;
 }
-body a:hover {
+:where(body a:hover) {
   text-decoration-color: initial;
 }
-body a:visited {
+:where(body a:visited) {
   color: var(--color-text-link-visited);
   text-decoration-color: var(--color-text-link-visited);
 }
