@@ -1,4 +1,5 @@
 @import url("./common/common.css");
+@import url("./full-screen-modal.css");
 
 header {
   align-items: center;
@@ -86,49 +87,6 @@ main .button:hover {
   color: var(--color-offwhite);
 }
 
-#full-screen-modal {
-  backdrop-filter: blur(5px);
-  cursor: zoom-out;
-  display: none;
-  overflow: clip;
-  padding: 2rem 1rem;
-  position: fixed;
-  z-index: 100;
-}
-#full-screen-modal > * {
-  border-radius: 0.3rem;
-  height: 100%;
-  overflow: hidden;
-}
-#full-screen-modal img {
-  object-fit: contain;
-}
-#full-screen-modal.active {
-  display: flex;
-    align-items: center;
-    justify-content: center;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  min-width: 200px;
-}
-main .fullscreenable {
-  cursor: zoom-in;
-}
-main picture.fullscreenable {
-  border: 3px solid transparent;
-  outline: 0 solid var(--color-offblack);
-
-  transition: 
-    border-color 0.00001s 0.2s ease-out,
-    outline 0.2s ease-out
-  ;
-}
-main picture.fullscreenable:hover {
-  border-color: var(--color-seashell);
-  outline: 3px solid var(--color-offblack);
-}
-
 .hero {
   background-color: black;
   background-image: url("/assets/photos/outside4800_normal.jpeg");
@@ -162,6 +120,26 @@ main .hero p {
   border-radius: 1rem;
 }
 
+main .phone-container {
+  background-color: var(--color-offwhite);
+  border: 2px dashed var(--color-offblack);
+  border-radius: 0.15rem;
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+main .phone-container > * {
+  margin: auto;
+}
+main .phone-container .phone {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+
 main > section {
   margin-top: 1rem;
 }
@@ -191,29 +169,6 @@ main .services picture img {
 main .services p {
   flex: 1;
   min-width: 300px;
-}
-
-main .phone-container {
-  background-color: var(--color-offwhite);
-  border: 2px dashed var(--color-offblack);
-  border-radius: 0.15rem;
-  display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-between;
-  padding: 1rem;
-  margin: 0.5rem 0;
-}
-main .phone-container > * {
-  margin: auto;
-}
-main .contact h3 {
-  margin-top: 1rem;
-}
-main .phone {
-  font-size: 1.1rem;
-  font-weight: 550;
 }
 
 main .message form {
@@ -267,4 +222,7 @@ footer {
   justify-content: space-between;
   margin-top: 4rem;
   width: 100%;
+}
+footer > *:last-child {
+  text-align: right;
 }
