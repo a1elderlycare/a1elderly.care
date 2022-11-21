@@ -11,6 +11,8 @@
     name="description"
     content="Experienced care for senior and disability needs incuding dementia care. We're a 6-bedroom home located in a quiet neighborhood in Carmichael, CA."
   />
+  <!-- Apple automatically detects phone numbers and turns them into click able links. Disable this -->
+  <meta name="format-detection" content="telephone=no">
   <title>A-1 Elderly Care</title>
   <link rel="apple-touch-icon-precomposed" href="assets/logo512.png">
   <link rel="stylesheet" href="styles/index.css">
@@ -42,6 +44,14 @@
           We are a cozy 6-bedroom residential home in a quiet Carmichael neighborhood. This is a family run home seeking to provide close and personal care for you or your loved one. We have extensive experience with elderly and disabled care including dementia care.
         </p>
       </section>
+
+      <p class="phone-container">
+        <span class="phone">(916) 996-4763</span>
+        <a href="tel:916-996-4763" aria-label="Call A1-Elderly Care at (916) 996-4763">
+          <button class="button">Click Here to Call</button>
+        </a>
+      </p>
+
       <section class="services">
         <h2><a href="#services" id="services">Programs and services</a></h2>
         <div>
@@ -71,21 +81,11 @@
           </p>
         </div>
       </section>
-      <section class="contact">
-        <h2><a href="#contact" id="contact">Get in touch</a></h2>
-        <p>
-          Please don't hesistate to reach out if you'd like to schedule a tour or have any additional questions! You can call us at the number below or send us an email using the form below.
-        </p>
-        <h3>Give us a call</h3>
-        <p class="phone-container">
-          <span class="phone">(916) 996-4763</span>
-          <a href="tel:916-996-4763" aria-label="Call A1-Elderly Care at (916) 996-4763">
-            <button class="button">Call Us Now</button>
-          </a>
-        </p>
-      </section>
       <section class="message">
-        <h3>Or send us a message!</h3>
+        <h2><a href="#message" id="message">Get in touch</a></h2>
+        <p>
+          Please don't hesistate to reach out if you'd like to schedule a tour or have any additional questions! You can call us at the number above or send us an email using the form below.
+        </p>
         <form>
           <div>
             <input placeholder=" " type="text" name="name" id="name" />
@@ -99,7 +99,7 @@
             <textarea placeholder=" " name="message" id="message" cols="30" rows="10"></textarea>
             <label for="message">Message</label>
           </div>
-          <button id="send-email" type="submit">Send An Email</button>
+          <button id="send-email" type="submit">Send an Email</button>
         </form>
       </section>
     </main>

@@ -54,6 +54,9 @@ main {
 main h1 {
   margin: 0;
 }
+main h2 {
+  margin-bottom: 0.125rem;
+}
 main h2 * {
   color: var(--color-text);
 }
@@ -66,8 +69,11 @@ main b {
 main button,
 main .button {
   background: var(--color-amber);
+  border: 2px solid var(--color-offblack);
+  border-radius: 0.15rem;
   color: var(--color-offblack);
   font-weight: 500;
+  padding: 0.4rem 3rem;
 
   transition: 
     background-color 0.2s ease-out,
@@ -188,6 +194,7 @@ main .services p {
 }
 
 main .phone-container {
+  background-color: var(--color-offwhite);
   border: 2px dashed var(--color-offblack);
   border-radius: 0.15rem;
   display: flex;
@@ -207,13 +214,6 @@ main .contact h3 {
 main .phone {
   font-size: 1.1rem;
   font-weight: 550;
-}
-main .button {
-  background-color: var(--color-offwhite);
-  
-  padding: 0.4rem 3rem;
-  border: 2px solid var(--color-offblack);
-  border-radius: 0.15rem;
 }
 
 main .message form {
@@ -252,9 +252,6 @@ main .message :where(input, textarea):valid:not(:placeholder-shown) + label {
   color: var(--color-grey);
 }
 main .message button[type="submit"] {
-  padding: 0.4rem 3rem;
-  border: 2px solid var(--color-offblack);
-  border-radius: 0.15rem;
   align-self: start;
 }
 main .message textarea {
