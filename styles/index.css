@@ -120,16 +120,19 @@ main .hero p {
   border-radius: 1rem;
 }
 
-main .phone-container {
-  background-color: var(--color-offwhite);
+main .form-wrapper {
   border: 2px dashed var(--color-offblack);
   border-radius: 0.15rem;
+  padding: 1rem;
+}
+
+main .phone-container {
+  background-color: var(--color-offwhite);
   display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
     justify-content: space-between;
-  padding: 1rem;
   margin: 0.5rem 0;
 }
 main .phone-container > * {
@@ -171,23 +174,23 @@ main .services p {
   min-width: 300px;
 }
 
-main .message form {
+main .contact form {
   display: flex;
   flex-direction: column;
   gap: 0.85rem;
   margin: 0.5rem 0 2rem;
 }
-main .message form > div {
+main .contact form > div {
   position: relative;
 }
-main .message :where(input, textarea) {
+main .contact :where(input, textarea) {
   background: var(--color-offwhite);
   border: 2px solid var(--color-offblack);
   border-radius: 0.15rem;
   padding: 0.25rem 0.4rem;
   width: 100%;
 }
-main .message label {
+main .contact label {
   background: transparent;
   padding: 0 0.25rem;
   pointer-events: none;
@@ -198,18 +201,18 @@ main .message label {
   transition: inset 0.1s ease-out;
   transition-property: inset, background-color, color, font-size;
 }
-main .message :where(input, textarea):not(:placeholder-shown) + label {
+main .contact :where(input, textarea):not(:placeholder-shown) + label {
   background: linear-gradient(var(--color-offwhite) 70%, transparent 30%);
   top: -0.7rem;
   font-size: 0.85em;
 }
-main .message :where(input, textarea):valid:not(:placeholder-shown) + label {
+main .contact :where(input, textarea):valid:not(:placeholder-shown) + label {
   color: var(--color-grey);
 }
-main .message button[type="submit"] {
+main .contact button[type="submit"] {
   align-self: start;
 }
-main .message textarea {
+main .contact textarea {
   min-height: 2rem;
 }
 
