@@ -36,20 +36,58 @@
       <div class="hero">
         <p>Family-owned senior and disabled care</p>
       </div>
-      <section>
-        <h2><a href="#who" id="who">Who we are</a></h2>
+      <section class="intro">
+        <h2><a href="#intro" id="intro">Who we are</a></h2>
         <p>
-          We are a small 6 bedroom residential home in a quiet Carmichael neighborhood. This is a family run home seeking to provide close and personal care for you or your loved one. We have extensive experience with elderly and disabled care including dementia care.
+          We are a cozy 6-bedroom residential home in a quiet Carmichael neighborhood. This is a family run home seeking to provide close and personal care for you or your loved one. We have extensive experience with elderly and disabled care including dementia care.
         </p>
       </section>
-      <section>
+      <section class="services">
         <h2><a href="#services" id="services">Programs and services</a></h2>
-        <p>
-          Our home provides large private or shared rooms with everything that you need. Home-cooked meals, laundry and housekeeping services, medication management, showers and assistance with any <abbr title="activities of daily life">ADLs</abbr> such as dressing and eating. We have 24-hour pagers and motion sensors for those that are fall risk. Residents enjoy cable television, movies, high-speed internet, card and board games, and more. Our home also has a beautiful patio where the residents can enjoy the fresh air and talk. Across the driveway (private street) is another home that we know well and where our residents have made friends.
-        </p>
+        <div>
+          <picture class="fullscreenable">
+            <source media="(max-width: 400px)" srcset="https://placekitten.com/100/100" />
+            <source media="(max-width: 600px)" srcset="https://placekitten.com/1200/1200" />
+            <img src="https://placekitten.com/1200/1200" alt="A kitten" />
+          </picture>
+          <p>
+            Our home provides large private or shared rooms with everything that you need. Home-cooked meals, laundry and housekeeping services, medication management, showers, and assistance with any <abbr title="activities of daily life">ADLs</abbr> such as dressing and eating. We have 24-hour pagers and motion sensors for those that are fall risk. Residents enjoy cable television, movies, high-speed internet, card and board games, and more.
+          </p>
+        </div>
+        <div>
+          <p>
+            All of our meals are home made, ensuring a nutritious and delicious meal every time. And because we are a smaller home, we can customize and individualize the meals accordingly.
+          </p>
+          <picture class="fullscreenable">
+            <source media="(max-width: 400px)" srcset="https://placekitten.com/100/100" />
+            <source media="(max-width: 600px)" srcset="https://placekitten.com/1200/1200" />
+            <img src="https://placekitten.com/600/600" alt="A kitten" />
+          </picture>
+        </div>
+        <div>
+          <picture class="fullscreenable">
+            <img src="https://placekitten.com/500/500" alt="A kitten" />
+          </picture>
+          <p>
+            Our home also has a beautiful patio where the residents can enjoy the fresh air and talk. Across the driveway (private street) is another home that we know well and where our residents have made friends.
+          </p>
+        </div>
       </section>
       <section class="contact">
-        <h2><a href="#contact" id="contact">Send us a message</a></h2>
+        <h2><a href="#contact" id="contact">Get in touch</a></h2>
+        <p>
+          Please don't hesistate to reach out if you'd like to schedule a tour or have any additional questions! You can call us at the number below or send us an email using the form below.
+        </p>
+        <h3>Give us a call</h3>
+        <p class="phone-container">
+          <span class="phone">(916) 996-4763</span>
+          <a href="tel:916-996-4763" aria-label="Call A1-Elderly Care at (916) 996-4763">
+            <button class="button">Call Us Now</button>
+          </a>
+        </p>
+      </section>
+      <section class="message">
+        <h3>Or send us a message!</h3>
         <form>
           <div>
             <input placeholder=" " type="text" name="name" id="name" />
@@ -63,19 +101,22 @@
             <textarea placeholder=" " name="message" id="message" cols="30" rows="10"></textarea>
             <label for="message">Message</label>
           </div>
-          <button id="send-email" type="submit">Send</button>
+          <button id="send-email" type="submit">Send An Email</button>
         </form>
       </section>
     </main>
     <footer>
-      <a
-        href="tel:916-996-4763"
-        aria-label="Call us"
-      >
-        Click here
-      </a>
-      to give us a call at (916) 996-4763
+      <p>
+        5210 Robertson Ave. 
+        <br />
+        Carmichael, CA 95608
+        <br />
+      </p>
+      <p>
+        Lic. #342700763
+      </p>
     </footer>
+    <div id="full-screen-modal" class=""></div>
   </div>
 </body>
 

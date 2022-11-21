@@ -8,13 +8,17 @@
 **Contact**: admin@a1elderly.care
 
 ## TODO
-- [ ] add description
+- [x] add description
 - [x] create svg logo
 - [x] logo -> favicon
 - [x] add manifest
+- [ ] feedback from Robi: hero image, organize body into text+images
 - [ ] add photos
+- [ ] make "Call Us" button more obvious
+- [ ] add testimonials
+- [ ] add sitemap.xml
 
 (non-dev)
 - [ ] setup GitHub acc for Robi
 - [x] setup contact@a1elderly.care
-- [ ] forward emails to Robi
+- [x] forward emails to Robi

@@ -28,6 +28,23 @@ header .contact a:visited {
   color: var(--color-text);
 }
 
+body picture {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  height: 100%;
+  width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+body picture > img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+}
+
 main {
   width: 100%;
   display: flex;
@@ -45,11 +62,49 @@ main hr {
 main b {
   font-weight: 550;
 }
+main button,
+main .button {
+  background: var(--color-amber);
+  color: var(--color-offblack);
+  font-weight: 500;
+
+  transition: 
+    background-color 0.2s ease-out,
+    color 0.2s 0.05s ease-out;
+  ;
+}
+main button:hover,
+main .button:hover {
+  background-color: var(--color-offblack);
+  color: var(--color-offwhite);
+}
+
+#full-screen-modal {
+  backdrop-filter: blur(5px);
+  cursor: zoom-out;
+  display: none;
+  overflow: clip;
+  padding: 2rem 1rem;
+  position: fixed;
+  z-index: 100;
+}
+#full-screen-modal > * {
+  border-radius: 0.3rem;
+  overflow: hidden;
+}
+#full-screen-modal.active {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  min-width: 200px;
+}
 
 main .hero {
   background-color: black;
-  /* background-image: url("https://friendlybusinessdemo.files.wordpress.com/2019/08/field-918534_1920.jpg"); */
-  background-image: url("../assets/grid_0.png");
+  background-image: url("https://friendlybusinessdemo.files.wordpress.com/2019/08/field-918534_1920.jpg");
   background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -68,6 +123,7 @@ main .hero p {
   color: var(--color-offwhite);
   font-size: 2rem;
   font-weight: 900;
+  line-height: 1.25;
   text-align: center;
   
   backdrop-filter: blur(1px);
@@ -78,24 +134,93 @@ main > section {
   margin-top: 1rem;
 }
 
+main .services > div {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0;
+  max-width: 800px;
+}
+main .services > div:nth-child(odd) {
+  flex-wrap: wrap-reverse;
+}
+main .services picture {
+  border: 2px solid var(--color-offblack);
+  border-radius: 0.3rem;
+  cursor: zoom-in;
+  overflow: clip;
+  width: 200px;
+}
+main .services picture img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+main .services p {
+  flex: 1;
+  min-width: 300px;
+}
 
-main .contact form {
+main .phone-container {
+  border: 2px dashed var(--color-offblack);
+  border-radius: 0.15rem;
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    gap: 1rem;
+    justify-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem 0;
+}
+main .phone-container > * {
+  margin: auto;
+}
+main .contact h3 {
+  margin-top: 1rem;
+}
+main .phone {
+  font-size: 1.1rem;
+  font-weight: 550;
+}
+main .button {
+  background-color: var(--color-offwhite);
+  
+  padding: 0.4rem 3rem;
+  border: 2px solid var(--color-offblack);
+  border-radius: 0.15rem;
+}
+main .button:hover {
+  --shadow-color: 210 11% 15%;
+  /* box-shadow: 
+    0 0 0.3px hsl(var(--shadow-color) / 0.4),
+    0 0 0.7px -0.5px hsl(var(--shadow-color) / 0.36),
+    0 0 1.6px -1px hsl(var(--shadow-color) / 0.31),
+    0 0 3.5px -1.5px hsl(var(--shadow-color) / 0.27),
+    0 0 7.2px -2px hsl(var(--shadow-color) / 0.22)
+  ; */
+}
+
+main .message form {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 0.85rem;
+  margin: 0.5rem 0 2rem;
 }
-main .contact form > div {
+main .message form > div {
   position: relative;
 }
-main .contact :where(input, textarea) {
+main .message :where(input, textarea) {
   background: var(--color-offwhite);
   border: 2px solid var(--color-offblack);
   border-radius: 0.15rem;
   padding: 0.25rem 0.4rem;
   width: 100%;
 }
-main .contact label {
+main .message label {
   background: transparent;
   padding: 0 0.25rem;
   pointer-events: none;
@@ -106,20 +231,31 @@ main .contact label {
   transition: inset 0.1s ease-out;
   transition-property: inset, background-color, color, font-size;
 }
-main .contact :where(input, textarea):not(:placeholder-shown) + label {
+main .message :where(input, textarea):not(:placeholder-shown) + label {
   background: linear-gradient(var(--color-offwhite) 70%, transparent 30%);
   top: -0.7rem;
   font-size: 0.85em;
 }
-main .contact :where(input, textarea):valid:not(:placeholder-shown) + label {
+main .message :where(input, textarea):valid:not(:placeholder-shown) + label {
   color: var(--color-grey);
 }
-main .contact button[type="submit"] {
+main .message button[type="submit"] {
   padding: 0.4rem 3rem;
   border: 2px solid var(--color-offblack);
   border-radius: 0.15rem;
-  align-self: flex-end;
+  align-self: start;
 }
-main .contact textarea {
+main .message textarea {
   min-height: 2rem;
+}
+
+footer {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 4rem;
+  width: 100%;
 }
