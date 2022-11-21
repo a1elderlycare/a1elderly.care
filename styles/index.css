@@ -91,6 +91,7 @@ main .button:hover {
 #full-screen-modal > * {
   border-radius: 0.3rem;
   overflow: hidden;
+  height: 100%;
 }
 #full-screen-modal.active {
   display: flex;
@@ -101,8 +102,24 @@ main .button:hover {
   width: 100vw;
   min-width: 200px;
 }
+main .fullscreenable {
+  cursor: zoom-in;
+}
+main picture.fullscreenable {
+  border: 3px solid transparent;
+  outline: 0 solid var(--color-offblack);
 
-main .hero {
+  transition: 
+    border-color 0.00001s 0.2s ease-out,
+    outline 0.2s ease-out
+  ;
+}
+main picture.fullscreenable:hover {
+  border-color: var(--color-seashell);
+  outline: 3px solid var(--color-offblack);
+}
+
+.hero {
   background-color: black;
   background-image: url("/assets/pic0.jpeg");
   background-position: bottom;
@@ -119,8 +136,12 @@ main .hero {
     justify-content: center;
   padding: calc(2rem + 10%);
 }
+.hero p { 
+  display: none;
+}
 main .hero p {
   color: var(--color-offwhite);
+  display: block;
   font-size: 2rem;
   font-weight: 900;
   line-height: 1.25;
@@ -149,9 +170,7 @@ main .services > div:nth-child(odd) {
   flex-wrap: wrap-reverse;
 }
 main .services picture {
-  border: 2px solid var(--color-offblack);
   border-radius: 0.3rem;
-  cursor: zoom-in;
   overflow: clip;
   width: 200px;
 }

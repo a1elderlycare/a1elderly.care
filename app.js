@@ -46,7 +46,7 @@ document.addEventListener('keydown', e => {
       return;
     case 'ArrowDown':
     case 'ArrowLeft':
-      currentContentIndex = (max - (currentContentIndex - 1)) % max;
+      currentContentIndex = (max + (currentContentIndex - 1)) % max;
       break;
     case 'ArrowUp':
     case 'ArrowRight':
