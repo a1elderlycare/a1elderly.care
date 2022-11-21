@@ -38,7 +38,8 @@ body picture {
     max-width: 100%;
 }
 body picture > img {
-  object-fit: contain;
+  aspect-ratio: 1/1;
+  object-fit: cover;
   height: 100%;
   width: 100%;
     max-height: 100%;
@@ -90,8 +91,11 @@ main .button:hover {
 }
 #full-screen-modal > * {
   border-radius: 0.3rem;
-  overflow: hidden;
   height: 100%;
+  overflow: hidden;
+}
+#full-screen-modal img {
+  object-fit: contain;
 }
 #full-screen-modal.active {
   display: flex;
@@ -121,7 +125,7 @@ main picture.fullscreenable:hover {
 
 .hero {
   background-color: black;
-  background-image: url("/assets/pic0.jpeg");
+  background-image: url("/assets/photos/outside4800_normal.jpeg");
   background-position: bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -176,7 +180,6 @@ main .services picture {
 }
 main .services picture img {
   height: 100%;
-  object-fit: contain;
   width: 100%;
 }
 main .services p {
@@ -190,7 +193,6 @@ main .phone-container {
   display: flex;
     align-items: center;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     gap: 1rem;
     justify-content: space-between;
   padding: 1rem;
@@ -212,16 +214,6 @@ main .button {
   padding: 0.4rem 3rem;
   border: 2px solid var(--color-offblack);
   border-radius: 0.15rem;
-}
-main .button:hover {
-  --shadow-color: 210 11% 15%;
-  /* box-shadow: 
-    0 0 0.3px hsl(var(--shadow-color) / 0.4),
-    0 0 0.7px -0.5px hsl(var(--shadow-color) / 0.36),
-    0 0 1.6px -1px hsl(var(--shadow-color) / 0.31),
-    0 0 3.5px -1.5px hsl(var(--shadow-color) / 0.27),
-    0 0 7.2px -2px hsl(var(--shadow-color) / 0.22)
-  ; */
 }
 
 main .message form {
