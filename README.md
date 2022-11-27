@@ -16,13 +16,15 @@
 - [x] add photos
 - [x] make "Call Us" button more obvious
 - [ ] add testimonials
-- [ ] add sitemap.xml
-- [ ] use different image sizes for optimal performance
+- [ ] add sitemap.xml & submit to google
+- [ ] use different image sizes for optimal performance [article](https://www.keycdn.com/blog/optimize-images-for-web)
 - [ ] webp
 - [ ] add gallery
-- [ ] update `alt` attributes
+- [x] update `alt` attributes
+- [ ] maybe revisit color palette ([tool](https://hue.tools/info)) and logo
 
 (non-dev)
 - [ ] setup GitHub acc for Robi
 - [x] setup contact@a1elderly.care
 - [x] forward emails to Robi
+- [ ] add on Google Maps/Yelp and add site

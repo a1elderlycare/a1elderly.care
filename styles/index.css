@@ -226,6 +226,18 @@ footer {
   margin-top: 4rem;
   width: 100%;
 }
-footer > *:last-child {
-  text-align: right;
+footer > p {
+  min-width: calc(170px - 0.5rem);
+}
+@media (min-width: calc(2 * 170px + 5rem)) {
+  footer > :last-child {
+    text-align: right;
+  }
+}
+@media (max-width: calc(2 * 170px + 5rem)) {
+  footer { justify-content: center; }
+
+  footer > p {
+    text-align: center;
+  }
 }
