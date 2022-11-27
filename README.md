@@ -16,7 +16,7 @@
 - [x] add photos
 - [x] make "Call Us" button more obvious
 - [ ] add testimonials
-- [ ] add sitemap.xml & submit to google
+- [x] add sitemap.xml & submit to google
 - [ ] use different image sizes for optimal performance [article](https://www.keycdn.com/blog/optimize-images-for-web)
 - [ ] webp
 - [ ] add gallery
