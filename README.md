@@ -2,7 +2,7 @@
 
 **Domains**
 - https://a1elderly.care
-- https://a1elderly.homes (redirect)
+- https://a1elderly.homes (defunct)
 - https://a1elderly.com (redirect)
 
 **Contact**: admin@a1elderly.care
